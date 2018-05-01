@@ -60,7 +60,7 @@
 
           <div class="col-sm-12">
 <div class="form-group">
-<label>Tenure you wish to have on your HDFC Bank Personal Loan</label>
+<label>Tenure you wish to have on your Bank Personal Loan</label>
             <div class="input-group mb-2">
               <div class="input-group-prepend">
                 <div class="input-group-text">Months</div>

@@ -69,44 +69,43 @@ if ( $banner->have_posts() ) :
 <div class="row margn-rim-35">
 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb1.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_1', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 home loans from more than 25 lenders<br>
-                    <a href="home-loan.html"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_1', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_1', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                  Home Loan</h3></div>
+                  <?php echo get_field('title_1', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>
 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb2.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_2', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 loan against property from more than 25 lenders<br>
-                    <a href="/life/"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_2', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_2', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                 Loan Against Property</h3></div>
+                  <?php echo get_field('title_2', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>
 <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-md-none d-lg-block">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb3.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_3', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 commercial property loans from more than 25 lenders<br>
-                    <a href="/life/"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_3', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_3', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                  Business Loan<br> 
-</h3></div>
+                  <?php echo get_field('title_3', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>
@@ -116,29 +115,29 @@ if ( $banner->have_posts() ) :
 <div class="row margn-rim-35">
 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb4.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_4', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 home loans from more than 25 lenders<br>
-                    <a href="/life/"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_4', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_4', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                  Loan for NRIs / PIO</h3></div>
+                  <?php echo get_field('title_4', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>
 <div class="col-lg-6 col-md-12 col-sm-12 col-12">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb5.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_5', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 loan against property from more than 25 lenders<br>
-                    <a href="/life/"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_5', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_5', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                 Lease Rental Discounting</h3></div>
+                  <?php echo get_field('title_5', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>
@@ -149,58 +148,57 @@ if ( $banner->have_posts() ) :
 <div class="row margn-rim-35">
 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb6.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_6', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 home loans from more than 25 lenders<br>
-                    <a href="/life/"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_6', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_6', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                  Personal Loan</h3></div>
+                  <?php echo get_field('title_6', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>
 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb7.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_7', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 loan against property from more than 25 lenders<br>
-                    <a href="/life/"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_7', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_7', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                 Life Insurance</h3></div>
+                  <?php echo get_field('title_7', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>
 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb8.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_8', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 commercial property loans from more than 25 lenders<br>
-                    <a href="/life/"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_8', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_8', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                  Health Insurance</h3></div>
+                  <?php echo get_field('title_8', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>
 <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-lg-none d-xl-none">
 <div class="servi-thumb">
-<img src="<?php echo get_template_directory_uri(); ?>/images/thumb3.jpg" alt="" class="img-fluid2">
+<img src="<?php echo get_field('image_3', $post->ID); ?>" alt="" class="img-fluid2">
 <div class="transbg">
                 <div class="details">
-                  <p>Compare and apply from over 1,000 commercial property loans from more than 25 lenders<br>
-                    <a href="/life/"><span>Apply Now</span></a>
+                  <p><?php echo get_field('description_3', $post->ID); ?><br>
+                    <a href="<?php echo get_field('url_3', $post->ID); ?>"><span>Apply Now</span></a>
                   </p>
                 </div>
                 <div class="title"><h3>
-                  Commercial<br> 
-Property Loans</h3></div>
+                  <?php echo get_field('title_3', $post->ID); ?></h3></div>
             </div>
 </div>
 </div>

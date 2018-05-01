@@ -1,16 +1,16 @@
 $(document).ready(function() {
-	$('form').submit(function(e){
-	  e.preventDefault();
+	$('.loan-banner form').submit(function(){
+	  $('#loding-overlay-display').show("fast");
 	  var formData = new FormData(this);
 	   var url  = $(this).data('url');
 		$.ajax({
 			url: url,
 			type: 'POST',
 			data: formData,
-			async: false,
+			//async: false,
 			dataType:'json',
 			beforeSend: function() {
-				alert('sending');
+				$('#loding-overlay-display').show("fast");
 			},
 			success: function (data) {
 				html='';
@@ -21,12 +21,12 @@ $(document).ready(function() {
 					$("#sf2").show("slow");
 					$("#homeEmail").val(data.successmsg);
 				}else if(data.status==true && data.successmsg==''){
-					$("#sf2").hide("slow");
-					alert(data.successmsg);
+					alert('Thankyou for submitting your details. We will response you within 24 hours.');
+					window.location.href=window.location.href;
 				}
 			},
 		complete: function() {
-			alert('sent');
+			$('#loding-overlay-display').hide("fast");
 		},
 			cache: false,
 			contentType: false,

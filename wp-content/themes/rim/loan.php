@@ -263,3 +263,4 @@ if (MultiPostThumbnails::has_post_thumbnail('page', $image_name)) {
 		});
 	});
 </script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/loan-form.js"></script>

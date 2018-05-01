@@ -18,7 +18,7 @@ if (empty($email)) {
 if(!empty($emailErr)){
 	echo json_encode(array('status'=>false,'errormsg'=>$emailErr));
 }else{
-	$to = "lokesh.techximum@gmail.com";
+	$to = "rajesh@realindianmoney.com";
 	$subject = 'Loan For NRIs Enquiry Part-2';
 	$message = "<table width='100%' border='0' cellspacing='3' cellpadding='3' style='border: #009999 2px solid'>
 	  <tr>

@@ -86,58 +86,57 @@ function getEmi($t){
 ?>
 
 <form name="loandata" method="post" action="">
-    <table id="emi" width="100%">
-        <tr>
+    <table id="emi" width="100%" class="table table-active">
+<thead>       
+	   <tr>
             <td colspan="3">
                 <b>
                     Enter Loan Information:
                 </b>
             </td>
         </tr>
-        <tr>
-            <td>
-                &nbsp;
-            </td>
-            <td width="48%">
-                Amount of the loan (any currency):
-                <span class="err">*</span>
-            </td>
-            <td>
-                <input type="text" name="principal" value="<?php echo (isset($_POST['principal']))?$_POST['principal']:''; ?>" size="12" >
-            </td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;
-            </td>
-            <td>
-                Annual percentage rate of interest: 
-                <span class="err">*</span>
-            </td>
-            <td>
-                <input type="text" name="interest" value="<?php echo (isset($_POST['interest']))?$_POST['interest']:''; ?>" size="12">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;
-            </td>
-            <td>
-                Repayment period in years: 
-                <span class="err">*</span>
-            </td>
-            <td>
-                <input type="text" name="years" value="<?php echo (isset($_POST['years']))?$_POST['years']:''; ?>" size="12">
-            </td>
-        </tr>
-       
-        <tr>
-            <td colspan="3">
-                <input type="submit" value="Compute"  name="EMI_submit" class="btn btn-primary">
-            </td>
-        </tr>
+		<tr>
+                <td> Loan Amount <span class="err">*</span><br>
+                <div class="form-group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">&#8377;</div>
+              </div>
+              <input type="text" name="principal" value="<?php echo (isset($_POST['principal']))?$_POST['principal']:''; ?>" size="12" class="form-control">
+            </div>
+          </div>
+               </td>
+                <td>ROI <span class="err">*</span> <br>
+                <div class="form-group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">%</div>
+              </div>
+             <input type="text" name="interest" value="<?php echo (isset($_POST['interest']))?$_POST['interest']:''; ?>" size="12" class="form-control">
+            </div>
+          </div>
+                </td>
+                <td>Loan Tenure <span class="err">*</span><br>
+                
+                <div class="form-group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Yrs</div>
+              </div>
+              <input type="text" name="years" value="<?php echo (isset($_POST['years']))?$_POST['years']:''; ?>" size="12" class="form-control">
+            </div>
+          </div>
+               </td>
+              </tr>
+              <tr>
+                <td colspan="3"><input type="submit" value="Compute" name="EMI_submit" class="btn btn-primary"></td>
+              </tr>
+        
+    
+       </thead>
     </table>
 </form>
+<div class="table-responisve">
 <table class="eni_list table table-striped">
     <?php 
 if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['years'])){
@@ -171,7 +170,7 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
                         Your monthly payment will be:
                     </td>
                     <td>
-                        <span id="monthly">Rs.<?php echo round($monthly); ?>.00</span>
+                        <span id="monthly"><strong>Rs.<?php echo round($monthly); ?>.00</strong></span>
                     </td>
                 </tr>
                 <tr>
@@ -182,7 +181,7 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
                         Your total payment will be:
                     </td>
                     <td>
-                        <span id="total"></span>
+                        <span ><strong id="total"></strong></span>
                     </td>
                 </tr>
                 <tr>
@@ -193,13 +192,13 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
                         Your total interest payments will be:
                     </td>
                     <td>
-                        <span id="interest"></span>
+                        <span ><strong id="interest"></strong></span>
                     </td>
                 </tr>
             </table>
         </td>
     </tr>
-    <tr>
+    <tr class="emi-heading">
         <td>
             S.N
         </td>
@@ -242,7 +241,7 @@ else {
     </tr>
     <?php endif; ?>
 </table>
-
+</div>
 <?php if(isset($_POST['EMI_submit'])){ ?>
 <script language="JavaScript">
     document.getElementById('result').style.display='block';
