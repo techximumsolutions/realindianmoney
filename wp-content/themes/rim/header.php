@@ -14,6 +14,7 @@
 <!DOCTYPE html>
 <html <?php  language_attributes(); ?> class="no-js">
 <head>
+	<meta name="robots" content="NOINDEX, NOFOLLOW">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -21,9 +22,19 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
+	<style>
+		.displayNone{display:none;}
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
+<!----Loader Div----->	
+	<div id="loding-overlay-display" style="display:none" class="">
+		<div class="loding-overlay">
+			<div class="loader"></div>
+		</div>
+	</div>	
+<!----Loader div end---->	
 	<section class="top-bar">
 <div class="container">
 <div class="row">
@@ -91,7 +102,7 @@
     ?>
 
     <li class="nav-item <?php echo $classesm.' '.$activeclass; ?>">
-        <a href="<?php echo $link; ?>" <?php if(in_array('dropdown',$item->classes)){ ?> class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" <?php }else{ ?>class="nav-link" <?php } ?>>
+        <a href="<?php echo $link; ?>" target="<?php echo $item->target; ?>" <?php if(in_array('dropdown',$item->classes)){ ?> class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" <?php }else{ ?>class="nav-link" <?php } ?>>
             <?php echo $title; ?>
         </a>
     <?php endif; ?>
@@ -102,7 +113,7 @@
             <?php endif; ?>
 
                
-                    <a class="dropdown-item <?php echo $classesm; ?>"  href="<?php echo $link; ?>"><?php echo $title; ?></a>
+                    <a class="dropdown-item <?php echo $classesm; ?>"  target="<?php echo $item->target; ?>"   href="<?php echo $link; ?>"><?php echo $title; ?></a>
                 
 
             <?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>

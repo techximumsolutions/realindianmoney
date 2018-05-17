@@ -98,7 +98,7 @@
         </div>
       
       </div>
-           <input type="submit" value="Go">
+           <input type="submit" value="Go" class="btn btn-warning btn-lg open1">
 
 </div>
 
@@ -199,7 +199,7 @@
       </div>
       
       
-           <input type="submit" value="Go">
+           <input type="submit" value="Go" class="btn btn-warning btn-lg open1">
 
 
 

@@ -95,4 +95,27 @@ echo '</div></section>';
 }
 ?>
 	 
-<?php get_footer(); ?>
+<?php get_footer(); if(get_query_var('pagename')=="emi-calculator"){ ?>
+	<script>
+$(document).ready(function(){
+	 $(".btnClick").click(function(){
+		 if($(this).text()=='save'){
+			$('#emi-loan-form').submit();
+		}
+		 var id =$(this).data('id');
+		$(this).text('save');
+		$('.'+id).prop('disabled', false);
+	});
+	$(".inputKeyup").keyup(function(){
+		$('.new_principle').val($(this).val());
+		$('.emisame').val($('.getval_'+$(this).data('time')).val());
+		$('.left_time').val($(this).data('time'));
+	});
+	$(".onchange").on('change',function(){
+		$('.emisame').val($(this).val());
+		$('.new_principle').val($('.getInputval_'+$(this).data('time')).val());
+		$('.left_time').val($(this).data('time'));
+	});
+});
+</script>
+<?php } ?>

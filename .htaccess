@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /data/pawan/R/rim/wordpress/
+RewriteBase /dev/rim/wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /data/pawan/R/rim/wordpress/index.php [L]
+RewriteRule . /dev/rim/wordpress/index.php [L]
 </IfModule>
 
 # END WordPress

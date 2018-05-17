@@ -907,7 +907,12 @@ body{
 		padding: 9px 6px !important;
 		font-size: 10px;
 	}
-	
+#emi thead td{
+	display:block;
+}
+.table-responisve{
+	overflow-x:scroll;
+}
 .servi-thumb:hover .details{
 	margin-top:14px !important;
 }
@@ -1150,4 +1155,54 @@ position:relative;
 display:none;
 }
 /*****End Blance Transfer Calculator*******/
+/****Loader Css*****/
+.loader {
+ border: 16px solid #ddd;
+ border-radius: 50%;
+ border-top: 16px solid #6ab043;
+ width: 120px;
+ height: 120px;
+ -webkit-animation: spin 2s linear infinite; /* Safari */
+ animation: spin 2s linear infinite;
+ margin:0px auto;
+}
+.loding-overlay{
+	position:fixed;
+    width:100%;
+    height:100%;
+    background:rgb(255, 255, 255, 0.9);
+    z-index:99;
+    display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+    -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -ms-flex-direction:column;
+   flex-direction:column;
+   -webkit-box-pack:center;
+   -ms-flex-pack:center;
+   justify-content:center;
+    margin:0px auto;
+}
+/* Safari */
+@-webkit-keyframes spin {
+ 0% { -webkit-transform: rotate(0deg); }
+ 100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
 /* End here */
+/*30-4-2018*/
+#emi thead td{
+    font-size:17px;
+    font-weight:600;
+}
+.emi-heading td{
+	background:#6bb244;
+	color:#fff;
+	font-size:18px;
+	font-weight:500;
+}

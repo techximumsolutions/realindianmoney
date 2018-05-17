@@ -5,7 +5,7 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i></a></li>
     <li class="breadcrumb-item"><a href="#">Downloads</a></li>
-    <li class="breadcrumb-item active" aria-current="page">ICICI Bank Form</li>
+    <li class="breadcrumb-item active" aria-current="page"><?php echo str_replace('Download Category:','',get_the_archive_title()); ?></li>
   </ol>
 </nav>
 

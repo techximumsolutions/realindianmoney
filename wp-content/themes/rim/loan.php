@@ -56,41 +56,45 @@ if (MultiPostThumbnails::has_post_thumbnail('page', $image_name)) {
 			    </div>
 			    <div class="row">
 			      <div class="col-sm-12 col-md-4">
-			        <div class="types-loan"> <a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_1', $post->ID); ?>" alt="" class="img-fluid"></a>
+			        <div class="types-loan"> <a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_1', $post->ID); ?>" alt="" class="img-fluid">
 			          <h4><?php echo get_field('purpose_title', $post->ID); ?></h4>
 			          <p><?php echo get_field('purpose_short_description_1', $post->ID); ?></p>
+					  </a>
 			        </div>
 			      </div>
 			      <div class="col-sm-12 col-md-4">
-			        <div class="types-loan"> <a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_2', $post->ID); ?>" alt="" class="img-fluid"></a>
+			        <div class="types-loan"> <a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_2', $post->ID); ?>" alt="" class="img-fluid">
 			          <h4><?php echo get_field('purpose_title_2', $post->ID); ?></h4>
-			          <p><?php echo get_field('purpose_short_description_2', $post->ID); ?></p>
+			          <p><?php echo get_field('purpose_short_description_2', $post->ID); ?></p></a>
 			        </div>
 			      </div>
 			      <div class="col-sm-12 col-md-4">
-			        <div class="types-loan"> <a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_3', $post->ID); ?>" alt="" class="img-fluid"></a>
+			        <div class="types-loan"> 
+						<a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> 
+							<img src="<?php echo get_field('purpose_image_3', $post->ID); ?>" alt="" class="img-fluid">
 			          <h4><?php echo get_field('purpose_title_3', $post->ID); ?></h4>
-			          <p><?php echo get_field('purpose_short_description_3', $post->ID); ?></p>
+			          <p><?php echo get_field('purpose_short_description_3', $post->ID); ?></p></a>
+					 
 			        </div>
 			      </div>
 			    </div>
 			    <div class="row">
 			      <div class="col-sm-12 col-md-4">
-			        <div class="types-loan"> <a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_4', $post->ID); ?>" alt="" class="img-fluid"></a>
+			        <div class="types-loan"> <a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_4', $post->ID); ?>" alt="" class="img-fluid">
 			          <h4><?php echo get_field('purpose_title_4', $post->ID); ?></h4>
-			          <p><?php echo get_field('purpose_short_description_4', $post->ID); ?></p>
+			          <p><?php echo get_field('purpose_short_description_4', $post->ID); ?></p></a>
 			        </div>
 			      </div>
 			      <div class="col-sm-12 col-md-4">
-			        <div class="types-loan"> <a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_5', $post->ID); ?>" alt="" class="img-fluid"></a>
+			        <div class="types-loan"> <a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_5', $post->ID); ?>" alt="" class="img-fluid">
 			          <h4><?php echo get_field('purpose_title_5', $post->ID); ?></h4>
-			          <p><?php echo get_field('purpose_short_description_5', $post->ID); ?></p>
+			          <p><?php echo get_field('purpose_short_description_5', $post->ID); ?></p></a>
 			        </div>
 			      </div>
 			      <div class="col-sm-12 col-md-4">
-			        <div class="types-loan"> <a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_6', $post->ID); ?>" alt="" class="img-fluid"></a>
+			        <div class="types-loan"> <a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_6', $post->ID); ?>" alt="" class="img-fluid">
 			          <h4><?php echo get_field('purpose_title_6', $post->ID); ?></h4>
-			          <p><?php echo get_field('purpose_short_description_6', $post->ID); ?></p>
+			          <p><?php echo get_field('purpose_short_description_6', $post->ID); ?></p></a>
 			        </div>
 			      </div>
 			    </div>
@@ -107,35 +111,35 @@ if (MultiPostThumbnails::has_post_thumbnail('page', $image_name)) {
 		    </div>
 		    <div class="row margn-rim-30">
 		      <div class="col-sm-4 col-6">
-		        <div class="types-loan"><a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_1', $post->ID); ?>" alt="" class="img-circle img-thumbnail"></a>
-		          <h4><?php echo get_field('purpose_title', $post->ID); ?></h4>
+		        <div class="types-loan"><a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_1', $post->ID); ?>" alt="" class="img-circle img-thumbnail">
+		          <h4><?php echo get_field('purpose_title', $post->ID); ?></h4></a>
 		        </div>
 		      </div>
 		      <div class="col-sm-4 col-6">
-		        <div class="types-loan"><a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_2', $post->ID); ?>" alt="" class="img-circle img-thumbnail"></a>
-		          <h4><?php echo get_field('purpose_title_2', $post->ID); ?></h4>
+		        <div class="types-loan"><a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_2', $post->ID); ?>" alt="" class="img-circle img-thumbnail">
+		          <h4><?php echo get_field('purpose_title_2', $post->ID); ?></h4></a>
 		        </div>
 		      </div>
 		      <div class="col-sm-4 col-12">
-		        <div class="types-loan"><a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_3', $post->ID); ?>" alt="" class="img-circle img-thumbnail"></a>
-		          <h4><?php echo get_field('purpose_title_3', $post->ID); ?></h4>
+		        <div class="types-loan"><a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_3', $post->ID); ?>" alt="" class="img-circle img-thumbnail">
+		          <h4><?php echo get_field('purpose_title_3', $post->ID); ?></h4></a>
 		        </div>
 		      </div>
 		    </div>
 		    <div class="row margn-rim-30">
 		      <div class="col-sm-4 col-6">
-		        <div class="types-loan"><a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_4', $post->ID); ?>" alt="" class="img-circle img-thumbnail"></a>
-		          <h4><?php echo get_field('purpose_title_4', $post->ID); ?></h4>
+		        <div class="types-loan"><a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_4', $post->ID); ?>" alt="" class="img-circle img-thumbnail">
+		          <h4><?php echo get_field('purpose_title_4', $post->ID); ?></h4></a>
 		        </div>
 		      </div>
 		      <div class="col-sm-4 col-6">
-		        <div class="types-loan"><a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_5', $post->ID); ?>" alt="" class="img-circle img-thumbnail"></a>
-		          <h4><?php echo get_field('purpose_title_5', $post->ID); ?></h4>
+		        <div class="types-loan"><a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_5', $post->ID); ?>" alt="" class="img-circle img-thumbnail">
+		          <h4><?php echo get_field('purpose_title_5', $post->ID); ?></h4></a>
 		        </div>
 		      </div>
 		      <div class="col-sm-4 col-12">
-		        <div class="types-loan"><a href="#" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_6', $post->ID); ?>" alt="" class="img-circle img-thumbnail"></a>
-		          <h4><?php echo get_field('purpose_title_6', $post->ID); ?></h4>
+		        <div class="types-loan"><a href="javascript:void(0)" data-content="<?php echo get_field('purpose_description_1', $post->ID); ?>" class="dataClick"> <img src="<?php echo get_field('purpose_image_6', $post->ID); ?>" alt="" class="img-circle img-thumbnail">
+		          <h4><?php echo get_field('purpose_title_6', $post->ID); ?></h4></a>
 		        </div>
 		      </div>
 		    </div>
@@ -256,10 +260,11 @@ if (MultiPostThumbnails::has_post_thumbnail('page', $image_name)) {
 	$(document).ready(function(){
 		$('.dataClick').on('click',function(){
 			var cont=$(this).data('content');
-			var heading=$(this).next().text();
+			var heading=$(this).children('h4').text();
 			$('#purposeHeading').text(heading);
 			$('#purposeContent').html(cont);
 			$('#exampleModalCenter').modal('show');
 		});
 	});
 </script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/loan-form.js"></script>
