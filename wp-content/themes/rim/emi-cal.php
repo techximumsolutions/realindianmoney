@@ -73,19 +73,19 @@ function getEmi($t){
         ?></td>
     <td>
         Rs. 
-        <?php echo number_format(round($r)); ?>.00
+        <?php  echo $t; ?>
     </td>
     <td>
         Rs. 
-        <?php  echo number_format($t); ?>.00
+        <?php echo round($r); ?>
     </td>
     <td>
         Rs. 
-        <?php echo number_format($p);  ?>.00
+        <?php echo $p;  ?>
     </td>
     <td>
         Rs. 
-        <?php echo number_format($monthly); ?>.00
+        <?php echo $monthly; ?>
     </td>
     <td>
 	<?php
@@ -96,14 +96,14 @@ function getEmi($t){
 			$vals=$_POST['new_principle'];
 			$select=$_POST['emisame'];
 		}else{
-			$vals=number_format(round($e));
+			$vals=round($e);
 		}
 	?>
         Rs. <input class="inputKeyup end_balnc_<?=$i;?> getInputval_<?=$i;?>" data-time="<?=$i;?>" type="text" value="<?php echo $vals;  ?>" disabled /><select  data-time="<?=$i;?>" class="onchange form-control end_balnc_<?=$i;?> getval_<?=$i;?>" disabled=""><option value="">Same Emi yes/No</option></option><option value="yes" <?php echo (isset($select) && $select=='yes')?'selected="selected"':'' ?>>Yes</option></option><option value="No" <?php echo (isset($select) && $select=='No')?'selected="selected"':'' ?>>No</option></option></select><button data-id="end_balnc_<?=$i;?>" class="btn btnClick btn-green">Edit</button>
     </td>
 </tr>
 <?php
-if(isset($_POST['left_time']) && $_POST['left_time'] && number_format($monthly)>$e){
+if(isset($_POST['left_time']) && $_POST['left_time'] && $monthly>$e){
 			return 0;	
 }	
 $j=0;
@@ -218,7 +218,7 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
                         Your monthly payment will be:
                     </td>
                     <td>
-                        <span id="monthly"><strong>Rs.<?php echo round($monthly); ?>.00</strong></span>
+                        <span id="monthly"><strong>Rs.<?php echo round($monthly); ?></strong></span>
                     </td>
                 </tr>
                 <tr>
@@ -262,7 +262,7 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
                         Your monthly payment will be:
                     </td>
                     <td>
-                        <span id="secmonthly"></span>
+                        <span><strong id="secmonthly"></strong></span>
                     </td>
                 </tr>
                 <tr>
@@ -298,10 +298,10 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
             Payment Date
         </td>
         <td>
-            Interest
+            Opening Balance
         </td>
         <td>
-            Beginning Balance
+            Interest
         </td>
         <td>
             Principle
@@ -310,7 +310,7 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
             Total Payment
         </td>
         <td>
-            Ending Balance
+            Outstanding Principle
         </td>
     </tr>
     <?php
@@ -318,12 +318,12 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
     ?>
     <script type="text/ecmascript">
         <!--// Ist Phase-->
-        document.getElementById("interest").innerHTML="Rs."+<?php echo round($totalint); ?>+".00";
-        document.getElementById("total").innerHTML="Rs."+<?php echo round($tp); ?>+".00";
+        document.getElementById("interest").innerHTML="Rs."+<?php echo round($totalint); ?>;
+        document.getElementById("total").innerHTML="Rs."+<?php echo round($tp); ?>;
         <!--// 2nd Phase-->
-        document.getElementById("secmonthly").innerHTML="Rs."+<?php echo round($secmonthly); ?>+".00";
-        document.getElementById("sectotal").innerHTML="Rs."+<?php echo round($sectotal); ?>+".00";
-        document.getElementById("secint").innerHTML="Rs."+<?php echo round($totalintt); ?>+".00";
+        document.getElementById("secmonthly").innerHTML="Rs."+<?php echo round($secmonthly); ?>;
+        document.getElementById("sectotal").innerHTML="Rs."+<?php echo round($sectotal); ?>;
+        document.getElementById("secint").innerHTML="Rs."+<?php echo round($totalintt); ?>;
     </script>
     <?php
     }}
