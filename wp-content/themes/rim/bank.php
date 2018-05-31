@@ -12,6 +12,14 @@ if (MultiPostThumbnails::has_post_thumbnail('page', $image_name)) {
 } 
 
 ?>
+<style>
+	table td{
+		padding: 10px !important;
+	}
+	table td p{
+		line-height: 25px !important;
+	}
+</style>
 <section class="loan-banner" <?php if($image):echo 'style="background:url('.$image[0].')  no-repeat"'; endif; ?>>
 <div class="container">
 <nav aria-label="breadcrumb">

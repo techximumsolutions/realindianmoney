@@ -289,6 +289,36 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
                 </tr>
             </table>
         </td>
+        <td>
+        	<table id="result" width="100%">
+                <tr>
+                    <td>
+                        <b>
+                            Payment Information 3:
+                        </b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Your total payment will be:
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span ><strong id="totalpayment"></strong></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Your total interest payments will be:
+                    </td>
+                    
+                </tr>
+                <tr><td>
+                        <span ><strong id="totalint"></strong></span>
+                    </td></tr>
+            </table>
+        </td>
     </tr>
     <tr class="emi-heading">
         <td>
@@ -324,6 +354,9 @@ if(!empty($_POST['principal']) || !empty($_POST['interest']) || !empty($_POST['y
         document.getElementById("secmonthly").innerHTML="Rs."+<?php echo round($secmonthly); ?>;
         document.getElementById("sectotal").innerHTML="Rs."+<?php echo round($sectotal); ?>;
         document.getElementById("secint").innerHTML="Rs."+<?php echo round($totalintt); ?>;
+        <!---3rd phase----------->
+        document.getElementById("totalpayment").innerHTML="Rs."+<?php echo round($tp+$sectotal); ?>;
+        document.getElementById("totalint").innerHTML="Rs."+<?php echo round($totalint+$totalintt); ?>;
     </script>
     <?php
     }}

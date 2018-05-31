@@ -14,7 +14,7 @@
 ?>
 
 
-<section class="finance-partners">
+<section class="finance-partners" <?php if(get_field('financier_background_image', $post->ID)):echo 'style="background:url('.get_field('financier_background_image', $post->ID).')  no-repeat"'; endif; ?>>
 <div class="container-fluid">
 <h2><?php echo $themeOptions['tburl']; ?></h2>
 <h4><?php echo $themeOptions['fkurl']; ?></h4>

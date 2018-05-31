@@ -208,7 +208,7 @@ if (MultiPostThumbnails::has_post_thumbnail('page', $image_name)) {
   </div>
 </section>
 
-<section class="bank-list-section">
+<section class="bank-list-section" <?php if(get_field('footer_image', $post->ID)):echo 'style="background-image:url('.get_field('footer_image', $post->ID).') "'; endif; ?>>
   <div class="container">
     <div class="headn-title-h3">
       <h3 style="color:#fff;"><?php echo get_post_custom_values('Bank Title',$post->ID)[0] ?></h3>

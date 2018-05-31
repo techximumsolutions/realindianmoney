@@ -1131,3 +1131,12 @@ function loans_init() {
     );
 }
 add_action( 'init', 'loans_init' );
+
+//custom function all pages
+function str_rep($val){
+	$val = str_replace("&nbsp;", " ", $val);
+	$string = htmlentities($val, null, 'utf-8');
+	$content = str_replace("&nbsp;", " ", $string);
+	$content = html_entity_decode($content);
+	return $content;
+}
